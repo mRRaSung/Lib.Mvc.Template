@@ -1,0 +1,9 @@
+﻿@model DateTime?
+
+@if(Model.HasValue)
+{
+    <div class="alert alert-danger">
+        @Model.Value.ToString("yyyy-MM-dd")
+    </div>
+}
+
